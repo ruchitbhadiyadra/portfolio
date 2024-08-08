@@ -1,0 +1,166 @@
+/* xs */
+@media (max-width:575px) {
+    .container {
+        max-width: 100%;
+    }
+
+    /* about */
+    .about-image {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    /* events */
+
+    .events ul {
+        flex-direction: column !important;
+    }
+
+    .events ul li {
+        margin-top: 15px;
+    }
+
+    .events .event-containt h3 {
+        margin-top: 15px;
+    }
+
+    .events a {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .events .event-image {
+        padding: 10px;
+    }
+
+    /* contact */
+    .contact-image {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .copy-right .copy-content {
+        padding: 20px 0;
+    }
+}
+
+/* sm */
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .w-sm-1 {
+        width: 100%;
+    }
+
+    /* about */
+    .about-image {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    /* events */
+
+    .events ul {
+        flex-direction: column !important;
+    }
+
+    .events ul li {
+        margin-top: 15px;
+    }
+
+    .events .event-containt h3 {
+        margin-top: 15px;
+    }
+
+    .events a {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    /* contact */
+    .contact-image {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+/* md */
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .w-md-2 {
+        width: 50%;
+    }
+
+    /* event */
+    .events ul {
+        flex-direction: row !important;
+    }
+}
+
+/* lg */
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .w-lg-2 {
+        width: 50%;
+    }
+
+    /* event */
+    .event-img img {
+        height: 303px;
+    }
+}
+
+/* xl */
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .w-xl-3 {
+        width: 33.33%;
+    }
+
+    .w-xl-66 {
+        width: 66.66%;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        flex-direction: row;
+        opacity: 1;
+    }
+
+    /* about */
+    .about-image {
+        margin-left: 100px;
+        margin-top: 15px;
+    }
+
+    /* contact */
+    .contact-image {
+        margin-left: 100px;
+        margin-top: 0;
+        width: 100%;
+    }
+}
+
+/* xxl */
+@media(min-width:1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}

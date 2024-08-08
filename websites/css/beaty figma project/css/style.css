@@ -1,0 +1,423 @@
+:root{
+    --dark-color:black;
+    --light-color:white;
+    --icon-color:#D9D9D9;
+    --text-color:#7E7E7E;
+    --text-light:#696969;
+    --bg-color: #EAEAEA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.relative{
+    position: relative;
+}
+
+.py{
+    padding: 80px 0;
+}
+
+.w-1 {
+    width: 100%;
+}
+
+.w-2 {
+    width: 50%;
+}
+
+.w-3 {
+    width: 33.33%;
+}
+
+.w-4 {
+    width: 25%;
+}
+
+.w-5 {
+    width: 20%;
+}
+
+/* HEADER */
+
+nav ul li a{
+    color: var(--dark-color);
+    font-size: 14px;
+    padding: 20px 0;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+.icon a{
+    color: var(--dark-color);
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    background-color: skyblue;
+    position: absolute;
+    left: 0;
+    top: 61%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s linear;
+    transform: translateY(30px);
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu ul li a{
+    padding: 10px 0;
+}
+
+/* BANNER */
+.banner{
+    background-image: url('../images/banner.png');
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-contant{
+    margin-left: 180px;
+}
+
+.banner-contant h1{
+    color: var(--dark-color);
+    font-size: 50px;
+    width: 68%;
+    margin-bottom: 15px;
+}
+
+.banner-contant p{
+    color: var(--dark-color);
+    font-size: 14px;
+    width: 68%;
+    margin-bottom: 15px;
+}
+
+.banner-contant a , .about-contant a , .most-title a , .beauty-containt a{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 12px;
+    border: 2px solid var(--dark-color);
+    padding: 10px 25px;
+    transition: all 0.5s linear;
+}
+
+.banner-contant a:hover , .about-contant a:hover, .most-title a:hover, .beauty-containt a:hover{
+    border: 2px solid var(--dark-color);
+    background-color: transparent;
+    color: var(--dark-color);
+}
+
+/* about */
+.about-image img{
+    border-radius: 10px;
+}
+
+.about-contant{
+    margin-left: 150px;
+}
+
+.about-contant h4 {
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.about-contant h2{
+    width: 50%;
+    line-height: 32px;
+}
+
+.about-contant p{
+    color: var(--text-color);
+    margin: 20px 0;
+}
+
+.about-contant ul{
+    margin-bottom: 25px;
+}
+
+.about-contant ul li{
+    margin-bottom: 10px;
+}
+
+.about-contant ul li i{
+    background-color: var(--icon-color);
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 15px;
+}
+
+.about-contant ul li span{
+    color: var(--text-color);
+}
+
+.about h3,.most-sub-title h3 , .blog h3{
+    position: absolute;
+    font-size: 68px;
+    top: -20px;
+    left: 0;
+    color: #cacaca54;
+    font-style: italic;
+}
+
+/* SERVICES  */
+
+.service{
+    background-color: var(--bg-color);
+}
+
+.service-item h2{
+    margin: 20px 0;
+    font-size: 35px;
+    width: 115%;
+}
+
+.service-item p{
+    color: var(--text-color);
+    margin: 10px 0;
+    width: 94%;
+}
+
+.service-item h6{
+    font-weight: 500;
+}
+
+/* PRODUCT */
+
+.product-title h2{
+    text-align: center;
+    font-weight: 700;
+}
+
+.product-title p{
+    text-align: center;
+    margin: 25px 0;
+}
+
+.product-content h4{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.product-content p , .product-content h5{
+    text-align: center;
+    color: var(--text-color);
+}
+
+.product-content span{
+    margin-left: 10px;
+}
+
+/* MOST */
+
+.most{
+    background-color: var(--bg-color);
+}
+
+.most-title h2{
+    font-weight: 600;
+    width: 58%;
+}
+
+.most-title p{
+    color: var(--text-color);
+    margin: 20px 0;
+    width: 126%;
+}
+
+.most-image img{
+    margin-left: 100px;
+    width: 180px;
+}
+
+/* Beauty */
+
+.beauty-containt h2{
+    margin-bottom: 10px;
+}
+
+.beauty-containt p{
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+
+/* SHOP */
+
+.shop p{
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+.shop .img{
+    padding: 10px;
+}
+
+.shop .images{
+    background-color: var(--bg-color);
+}
+
+/* BLOG */
+
+.blog h3{
+    left: 500px;
+}
+
+.blog-title h2{
+    margin: 20px 0;
+}
+
+.blog-sub-title h2{
+    margin: 10px 0;
+    width: 86%;
+}
+
+.blog-sub-title p{
+    margin-bottom: 20px;
+    color: var(--text-color);
+    width: 78%;
+}
+
+.blog-sub-contain{
+    padding: 10px;
+}
+
+.blog-sub-title a{
+    background-color: transparent;
+    color: var(--dark-color);
+    font-size: 12px;
+    border: 2px solid var(--dark-color);
+    padding: 10px 25px;
+    transition: all 0.5s linear;
+}
+
+.blog-sub-title a:hover{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+/* CONTACT US */
+
+.contact{
+    background-color: var(--bg-color);
+}
+
+.contact-content h2{
+    margin: 10px 0;
+}
+
+.contact-content p{
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.contact-content input , .contact-content button{
+    padding: 15px 45px;
+}
+
+/* FOOTER */
+
+.footer{
+    background-image: url('../images/footer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-image{
+    margin-top: 70px;
+    width: 75%;
+}
+
+.footer-content{
+    margin: 100px 0;
+}
+
+.footer-content h4{
+    margin-bottom: 15px;
+}
+
+.footer-content ul li{
+    color: var(--text-color);
+}
+
+.footer-content input{
+    padding: 10px 35px;
+}
+
+.footer i{
+    position: absolute;
+    left: 205px;
+    top: 46px;
+}
+
+.copy-right{
+    color: var(--text-color);
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,116 @@
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7098039216);
+  }
+  header .toggle i {
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .w-lg-1 {
+    width: 100%;
+  }
+  .banner .banner-image {
+    margin-top: 30px;
+  }
+  .case-study .slick-prev {
+    transform: translateX(-85%);
+  }
+  .case-study .slick-next {
+    transform: translateX(-100%);
+  }
+  .case-study .case-study-title p {
+    width: 35%;
+  }
+  .testimonial .single-item .testimonial-item .d-flex {
+    flex-direction: column;
+  }
+  .news .news-image .card {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .w-md-1 {
+    width: 100%;
+  }
+  .w-md-2 {
+    width: 50%;
+  }
+  .about .about-content {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .features .features-item {
+    margin-top: 20px;
+  }
+  .services .heading p {
+    width: 70%;
+  }
+  .case-study .slick-prev {
+    transform: translateX(-85%);
+  }
+  .case-study .slick-next {
+    transform: translateX(-75%);
+  }
+  .case-study .case-study-title p {
+    width: 42%;
+  }
+  footer .widget {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .w-sm-1 {
+    width: 100%;
+  }
+  .services .heading p {
+    width: 80%;
+  }
+  .case-study .slick-prev {
+    transform: translateX(-85%);
+  }
+  .case-study .slick-next {
+    transform: translateX(-50%);
+  }
+  .case-study .case-study-title p {
+    width: 55%;
+  }
+}
+@media (max-width: 575px) {
+  .w-xs-1 {
+    width: 100%;
+  }
+  .case-study .case-study-title p {
+    width: 98%;
+  }
+}
+
+/*# sourceMappingURL=max.css.map */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body class="font-josefin">
+
+    <main>
+        <section
+            class="w-full h-screen bg--900 flex justify-center items-center bg-[url('./images/form-bg.gifs')] z-40">
+            <video autoplay loop muted class="min-w-full min-h-full">
+                <source src="../images/from-bg.mp4" class="fixed top-0 left-0" />
+            </video>
+            <div class=" bg-form-bg p-10 rounded-xl absolute">
+                <a href="index.html">
+                    <img src="../images/loder.png" alt="logo" title="logo"
+                        class="absolute -top-14 left-1/2 w-24 h-24 translate-x-[-50%] bg-form-bg p-6 rounded-full">
+                </a>
+                <form class="w-96">
+                    <h2 class="text-4xl text-white font-semibold text-center my-10">Login form</h2>
+                    <label class="block text-white font-semibold text-xl my-3">Email</label>
+                    <input type="email" placeholder="Email"
+                        class="w-full outline-none text-white my-3 bg-transparent border-b-2 border-spacing-y-60 placeholder:text-white placeholder:text-xl px-3 py-2 border-white">
+                    <label class="block text-white font-semibold text-xl my-3">passsword</label>
+                    <input type="passsword" placeholder="passsword"
+                        class="w-full outline-none my-3 text-white bg-transparent border-b-2 border-spacing-y-60 placeholder:text-white placeholder:text-xl px-3 py-2 border-white">
+                    <button type="submit"
+                        class="bg-white text-xl font-semibold w-full rounded-full h-10 mt-10">Login</button>
+                </form>
+                <a href="javascript:void(0)" class="inline-block w-full text-white underline text-lg mt-6">Forget
+                    passsword</a>
+                <a href="registration.html"
+                    class="inline-block w-full text-white underline text-lg mt-2">Registration</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- loader -->
+    <div class="loader-overlay bg-white z-50 w-full h-full fixed top-0 left-0 flex items-center justify-center">
+        <img src="../images/loder.png" alt="loader" title="loader" />
+    </div>
+
+    <!-- j-quary cdn -->
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    
+    <script>
+        <!-- loader -->
+        $(window).on("load", function () {
+            $(".loader-overlay").fadeOut(5000);
+        });
+    </script>  
+
+</body>
+
+</html>

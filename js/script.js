@@ -80,7 +80,7 @@ $(document).ready(function(){
 
 // loader
 $(window).on("load", function () {
-    $(".loader-overlay").fadeOut(5000);
+    $(".loader-overlay").fadeOut(2000);
 });
 
 $(window).scroll(function () {
